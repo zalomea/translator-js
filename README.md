@@ -8,8 +8,8 @@ PhoneGap App or Angular.js App.
 
 ## How to use it
 
-Translator.js is a native JS plugin that don't need any special plugin, you 
-only have to include the library and add the tags and attributes.
+Translator.js is a vanilla JS without external dependencies, you only 
+have to include the library and add the tags and attributes.
 
 - Translation tags
 
