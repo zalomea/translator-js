@@ -6,6 +6,12 @@ Translator.js
 Internationalize your HTML App with JavaScript easily. Perfect for your 
 PhoneGap App or Angular.js App.
 
+## Features
+
+- No external plugin needed
+- Dynamic language modification
+- HTML compliant
+
 ## How to use it
 
 Translator.js is a vanilla JS without external dependencies, you only 
