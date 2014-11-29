@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script src="../js/translator.js"></script>
+		<script>
+
+			var dictionary = {
+				'en' : {
+					'Jugar' : 'Play',
+					'Traducir a' : 'Translate to',
+				},
+			};
+
+			var translator = Translator({
+				language : 'en',
+				dictionary : dictionary,
+				autostart : true,
+				htmlfriendly : true,
+			});
+
+			function dictionaryExample(){
+				var myDict = [];
+				myDict['Jugar'] = 'Spielen';
+				myDict['Traducir a'] = 'Übersetzen in';
+				translator.addTranslation('de',myDict);
+			}
+			function translationExample(){
+				translator.addTranslation('fr','Jugar','Jeux');
+				translator.addTranslation('fr','Traducir a','Traduire en');
+			}
+		</script>
+	</head>
+	<body>
+		<h1 data-translate="Jugar"></h1>
+		<button onclick="translator.setLanguageRun('es')"><span data-translate="Traducir a"></span> 'es'</button>
+		<button onclick="translator.setLanguageRun('en')"><span data-translate="Traducir a"></span> 'en'</button>
+		<button onclick="dictionaryExample();translator.setLanguageRun('de')"><span data-translate="Traducir a"></span> 'de'</button>
+		<button onclick="translationExample();translator.setLanguageRun('fr')"><span data-translate="Traducir a"></span> 'fr'</button>
+	</body>
+</html>
