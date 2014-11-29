@@ -1,3 +1,4 @@
+/* Translator-js v1.0.0 | @zalomea | MIT/GPL2 Licensed */
 var Translator = function(options){
 	var t = {
 		lang : null,
