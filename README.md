@@ -54,6 +54,38 @@ var dictionary = {
 }
 ```
 
+## Dynamic use:
+
+It's possible to update site's language dynamically. 
+
+- addTranslation(language, kvdictionary):
+
+This method accepts a dictionary `kvdictionary` and the language of translations `language`. 
+
+```
+var myDict = [];
+myDict['Jugar'] = 'Spielen';
+myDict['Traducir a'] = 'Übersetzen in';
+translator.addTranslation('de',myDict);
+```
+
+- addTranslation(language, index, translation):
+
+This method accepts a language `language`, an index word `index` and the translation of the index `translation`. 
+
+```
+translator.addTranslation('fr','Jugar','Jeux');
+translator.addTranslation('fr','Traducir a','Traduire en');
+```
+
+- setLanguageRun(language):
+
+This method sets the runtime language to `language`. 
+
+```
+translator.setLanguageRun('de');
+```
+
 ## Options
 
 The supported options are:
